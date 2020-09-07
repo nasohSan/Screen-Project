@@ -1,0 +1,1423 @@
+/* -------------------------------------------------------
+modza-art
+ -------------------------------------------------------*/
+
+
+/* ---------------------------------------------
+typography
+--------------------------------------------- */
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+   }
+   
+   body
+   {
+       /*font-family: 'Montserrat', 'Raleway' ;*/
+       font-size: 14px;
+       font-weight: 400;
+       line-height: 1.5;
+   
+       overflow-x: hidden;
+   
+       -webkit-font-smoothing: antialiased;
+          -moz-font-smoothing: antialiased;
+       text-rendering: optimizeLegibility;
+   }
+   
+   html, body {
+     height: 100vh;
+   }
+   
+   a,
+   button
+   {
+       -webkit-transition: all .3s;
+               transition: all .3s;
+   }
+   a:hover,
+   a:focus,
+   a button:hover,
+   button:hover,
+   button:focus,
+   button button:hover
+   {
+       -webkit-transition: all .3s;
+               transition: all .3s;
+       text-decoration: none;
+   }
+   
+   .btn
+   {
+       border-radius: 0;
+   }
+   
+   .separator
+   {
+       position: relative;
+   }
+   .separator:after
+   {
+       position: absolute;
+       top: -3px;
+       right: -20px;
+   
+       width: 2px;
+       height: 40px;
+   
+       content: '';
+   
+   
+   }
+   .separator:before
+   {
+       position: absolute;
+       top: -3px;
+       left: -20px;
+   
+       width: 2px;
+       height: 40px;
+   
+       content: '';
+   
+   
+   }
+   
+   .separator.center:after
+   {
+       margin: 0 auto;
+   }
+   
+   .separator.right:after
+   {
+       right: 0;
+       left: auto;
+   }
+   
+   
+   .quote .quote-img img
+   {
+       width: 40px;
+       height: auto;
+       margin-bottom: 15px;
+       padding: 10px;
+   
+       opacity: .7;
+   }
+   
+   .quote p
+   {
+       margin-bottom: 0;
+   }
+   
+   /* ---------------------------------------------
+   pre-loader
+   --------------------------------------------- */
+   #preloader
+   {
+       position: fixed;
+       z-index: 1800;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+   
+       width: 100%;
+       height: 100%;
+   
+       background: #000;
+   }
+   
+   .no-js #preloader,
+   .oldie #preloader
+   {
+       display: none;
+   }
+   
+   #loader {
+       position: absolute;
+       top: calc(50% - 200px);
+       left: calc(50% - 200px);
+       width: 400px;
+       height: 400px;
+       margin: 0px;
+       padding: 0;
+       background: rgba(0, 0, 0, 0) url(../../assets/img/logo.svg) no-repeat scroll center top;
+       background-size: 100%;
+   }
+   
+   
+   /* ---------------------------------------------
+   banner
+   --------------------------------------------- */
+   
+   html {
+       height: 100%;
+       width: 100%;
+   }
+   
+   body {
+       background: url(../img/wood.jpg) no-repeat center center;
+       height: 100%;
+       width: 100%;
+       min-height: 100%;
+       background-size: cover;
+   }
+   
+   
+   /*---------chrome-tv-setup----*/
+   
+   .section2 .col-lg-2 .box2H {
+       box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+   }
+   
+   .section1 {
+       height: 48%;
+       padding: 1%;
+       width: 100%;
+       display: block;
+       clear: both;
+       float: none;
+   }
+   
+   .test {
+       display: flex;
+       height: 100%;
+       overflow: hidden;
+       padding-bottom: 2px;
+   }
+   
+   .test2{
+     /*flex: 1;*/
+   }
+   
+   span.mobileNo {
+       float: right;
+       vertical-align: middle;
+       line-height: 1.6em;
+       padding-top: 3px;
+       padding-right: 2px;
+       color: #333;
+   }
+   
+   span.mobileNo::before {
+       content: '\f10b';
+       font-family: fontAwesome;
+       font-size: 14px;
+       margin-right: 2px;
+       vertical-align: bottom;
+       color: #333;
+   }
+   
+   .owl-carousel .owl-stage{
+     display: flex;
+     height: 100%;
+   }
+   
+   .owl-carousel .owl-stage-outer{
+       height: 100%;
+   }
+   
+   .owl-carousel .item{
+     height: 100%;
+   }
+   
+   .owl-carousel .item{
+     height: 100%;
+   }
+   
+   /*.section2 {
+       height: 49%;
+       padding:1%;
+       clear: both;
+       margin-top: 0;
+       clear: both;
+       width: 100.5%;
+   }*/
+   
+/*    .section2 {
+       height: 49%;
+       padding:1% 0px;
+       clear: both;
+       margin-top: 0;
+       clear: both;
+       width: 100%;
+       margin: 0px 10px;
+   } */
+
+   /*---- For Flyer ----*/
+      .section2 {
+    height: 49%;
+    padding:1% 0px;
+    margin-top: 0;
+    width: calc(50% - 15px);
+    margin: 0px 5px 0px 10px;
+    float: left;
+}
+   
+   .flyerSection {
+       height: 49%;
+       padding:1% 0px;
+       clear: both;
+       margin-top: 0;
+       clear: both;
+       width: 50%;
+       display: inline-block;
+       margin: 0px 10px;
+   }
+   
+   .section1 .col-md-6 {
+       margin-left: 0px;
+       margin-right: 0px;
+       padding: 0px 10px;
+   }
+   .section1 .col-md-4 {
+       margin: 0px;
+       padding: 0px 6px 4px 5px;
+       margin-bottom: -6px;
+   }
+   
+   .tiltes h2 {
+       padding: 0px;
+       margin: 0px;
+       margin-left: 18px;
+       font-size: 20px;
+       line-height: 1em;
+       clear: both;
+       display: block;
+   }
+   
+   .tiltes {
+   height: 3%;
+   width: 100%;
+   color: #fafafa;
+   text-align: left;
+   clear: both;
+   display: block;
+   position: relative;
+   }
+   
+   .fixh{
+     position: relative;
+   }
+   
+   
+   .box-video {
+       width: 100%;
+       height: 100%;
+       /* display: table; */
+       /* float: left; */
+       min-height: -webkit-fill-available;
+       overflow: hidden;
+       padding: 0px 0px;
+       border-radius: 4px!important;
+       padding-right: 4px;
+       padding-left: 4px;
+   }
+   
+   .section1 .col-md-5 {
+       padding: 0px 6px 0px 6px;
+   }
+   
+   
+   .boxH{
+   
+     height: 100%;
+     display: block;
+     width: 100%;
+     clear: both;
+     border-radius: 4px;
+   }
+   
+   .hoodsign {
+       background: url(../img/logo.svg) no-repeat center 16%;
+       background-size: 49%;
+       padding-top: 66%;
+       text-align: center;
+   }
+   
+   .downnapps {
+       text-align: center;
+       width: 100%;
+       display: block;
+   }
+   
+   .qrcode svg {
+       clear: both;
+       display: block;
+       margin-bottom: 7px;
+       margin-left: 7px;
+       border-radius: 12px;
+       padding: 0px;
+   }
+   
+   .carpooling span.headcat::before {
+       content: 'Carpooling - ';
+       vertical-align: baseline;
+   }
+   
+   
+   
+   .qrcode{
+     white-space:nowrap;
+   }
+   
+   
+   .qrcode {
+       display: block;
+       height: 45%;
+       width: 136px;
+       margin: 0 auto;
+       color: #fafafa;
+       margin-bottom: 81px;
+       /* white-space: nowrap; */
+       /* display: block; */
+       margin-top: 0px;
+       position: relative;
+       z-index: 9999;
+   }
+   
+   
+   .appslogo {
+       background: url(../img/appsstore.svg) no-repeat center center;
+       width: 87%;
+       height: 55px;
+       display: block;
+       margin-top: 10px;
+       background-size: 100%;
+       display: block;
+       margin: 0 auto;
+   }
+   
+   
+   
+   .qrcode img{
+     width: 100%;
+     height: 100%;
+   }
+   
+   .mangmentpst {
+       background: rgba(0, 0, 0, 0.5);
+       overflow: hidden;
+       text-align: center;
+       padding: 0px 10px 10px 10px;
+   }
+   
+   .box2H {
+       background:rgba(0,0,0,0);
+       border-radius: 3px;
+       overflow: hidden;
+       height: 100%;
+   }
+   
+   
+   .box-video  video {
+       display: inline-block;
+       vertical-align: baseline;
+       width: 100%;
+       height: 100%;
+   
+   }
+   
+   .caricon{
+     background: url(../img/carpollingIcon.svg) no-repeat center left;
+     width: 25px;
+     height: 25px;
+     display: inline-block;
+     margin-right: 5px;
+     vertical-align: middle;
+   }
+   
+   .babyicon{
+     background: url(../img/baby-icon.svg) no-repeat center left;
+     width: 30px;
+     height: 30px;
+     display: inline-block;
+     margin-right: 5px;
+     vertical-align: middle;
+   }
+   
+   .shicon{
+     background: url(../img/search-icon.svg) no-repeat center left;
+     width: 30px;
+     height: 30px;
+     display: inline-block;
+     margin-right: 5px;
+     vertical-align: middle;
+   }
+   
+   .flicon{
+     background: url(../img/freelance-icon.svg) no-repeat center left;
+     width: 25px;
+     height: 25px;
+     display: inline-block;
+     margin-right: 5px;
+     vertical-align: middle;
+   }
+   
+   .fricon{
+     background: url(../img/forrentIcon.svg) no-repeat center left;
+     width: 25px;
+     height: 25px;
+     display: inline-block;
+     margin-right: 5px;
+     vertical-align: middle;
+   }
+   
+   
+   .voicon{
+     background: url(../img/volanterricon.svg) no-repeat center left;
+     width: 30px;
+     height: 30px;
+     display: inline-block;
+     margin-right: 10px;
+     vertical-align: middle;
+   }
+   
+   .peticon{
+     background: url(../img/peticon.svg) no-repeat center left;
+     width: 25px;
+     height: 25px;
+     display: inline-block;
+     margin-right: 5px;
+     vertical-align: middle;
+   }
+   
+   .sporticon{
+     background: url(../img/sport-icon.svg) no-repeat center left;
+     width: 25px;
+     height: 25px;
+     display: inline-block;
+     margin-right: 5px;
+     vertical-align: middle;
+   }
+   
+   .dollaricon{
+     background: url(../img/sale-cat.svg) no-repeat center left;
+     width: 25px;
+     height: 25px;
+     display: inline-block;
+     margin-right: 5px;
+     vertical-align: middle;
+   }
+   
+   .owl-carousel .owl-item span.imgUser img {
+       width: 25px;
+       height: 25px;
+       display: inline-block;
+       border-radius: 100%;
+       margin-right: 5px;
+       background: url(../img/usersd.svg) no-repeat center center;
+       /* margin-top: 5px; */
+       margin-top: -2px;
+   }
+   
+   
+   .box2H.allCat {
+       background-color: #52a1d9;
+       border-top: 0px solid rgba(0,0,0,0.2);
+       padding: 0px;
+       height: 100%;
+       box-shadow: 2px 5px 3px rgba(0,0,0,0.3);
+   }
+   
+   .box2H.saleCat {
+       background-color: #52a1d9!important;
+        padding: 0px;
+       height: 100%;
+   }
+   
+   .box2H.sportCat {
+       background-color: #dc2d3a!important;
+        padding: 0px;
+   }
+   
+   
+   div#video-slider img {
+       width: 100%;
+       height: auto;
+   }
+   
+   .box2H.carpoolingCat {
+       background-color: #81a358!important;
+        padding: 0px;
+   }
+   
+   .box2H.rentCat {
+       background-color: #bda915!important;
+        padding: 0px;
+   }
+   
+   .box2H.petCat {
+       background-color: #615f8f!important;
+        padding: 0px;
+   }
+   
+   .box2H.volanterrCat {
+       background-color: #da7012!important;
+        padding: 0px;
+   }
+     /*
+   .volanterrCat .footerAds {
+     background: #b15303;
+   }
+   
+   .box2H.volanteers  .footerAds {
+       background: #f7953e;
+   }
+   
+   
+   .box2H.sportCat  .footerAds {
+       background: #c42034;
+   }
+   
+   .box2H.rentCat  .footerAds {
+       background: #e4c620;
+   }
+   
+   
+   .box2H.petCat  .footerAds {
+       background: #474878;
+   }
+   
+   .carpoolingCat .footerAds{
+     background: #5b8e3f;
+   }*/
+   
+   span.headcat {
+       margin-top: 4px;
+       display: block;
+       font-size: 13px;
+       color: #fafafa;
+       padding: 2px 10px;
+       width: 100%;
+       overflow: hidden;
+       white-space: normal;
+       padding-right: 10px;
+       font-weight: 700;
+       text-overflow: ellipsis;
+       height: 8%;
+       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+29,000000+100&0+0,0.05+29,0+100 */
+       background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 29%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+       background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 29%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+       background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 29%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+       white-space: nowrap;
+       overflow: hidden;
+   }
+   
+   span.timeAds {
+       font-size: 11px;
+       color: #fafafa;
+       line-height: 1em;
+       margin-top: -9px;
+       display: block;
+       text-align: left;
+       margin-left: 43px;
+       height: 3%;
+   }
+   
+   
+   body .imgbounds img {
+       background-size: 100%;
+       width: 100%;
+       height: auto;
+       display: block;
+       max-width: 100%;
+       margin: 0 auto;
+   }
+   
+   .imgbounds {
+       margin-top: 7px;
+       margin-bottom: 0px;
+       clear: both;
+       position: relative;
+       max-height: 38%;
+       overflow: hidden;
+       min-height: 38%;
+   }
+   
+   .volanterrCat .imgbounds img {
+       background-size: 100%;
+       width: 100%;
+       height: auto;
+       margin: 0 auto;
+       text-align: center;
+       display: block;
+       background-color: #f98d30;
+       padding: 5px;
+       padding-left: 25%;
+       padding-right: 25%;
+   }
+   
+   .sportCat .imgbounds img {
+       background-size: 100%;
+       width: 100%;
+       height: auto;
+       margin: 0 auto;
+       text-align: center;
+       display: block;
+       background-color: #c32738;
+       padding: 5px;
+       padding-left: 25%;
+       padding-right: 25%;
+   }
+   
+   .babyCat .imgbounds img {
+       background-size: 100%;
+       width: 100%;
+       height: auto;
+       margin: 0 auto;
+       text-align: center;
+       display: block;
+       background-color: #bf65b3;
+       padding: 5px;
+       padding-left: 25%;
+       padding-right: 25%;
+   }
+   
+   
+   .freelancerCat .imgbounds img {
+       background-size: 100%;
+       width: 100%;
+       height: auto;
+       margin: 0 auto;
+       text-align: center;
+       display: block;
+       background-color: #4872af;
+       padding: 5px;
+       padding-left: 25%;
+       padding-right: 25%;
+   }
+   
+   .ask4hCat .imgbounds img {
+       background-size: 100%;
+       width: 100%;
+       height: auto;
+       margin: 0 auto;
+       text-align: center;
+       display: block;
+       background-color: #fccc77;
+       padding: 5px;
+       padding-left: 25%;
+       padding-right: 25%;
+   }
+   
+   
+   .petCat .imgbounds img {
+       background-color: #585486;
+       background-size: 100%;
+       width: 100%;
+       height: auto;
+       margin: 0 auto;
+       text-align: center;
+       display: block;
+       padding: 5px;
+       padding-left: 25%;
+       padding-right: 25%;
+   }
+   
+   .carpoolingCat .imgbounds img {
+       background-color: #6b884a;
+       background-size: 100%;
+       width: 100%;
+       height: auto;
+       margin: 0 auto;
+       text-align: center;
+       display: block;
+       padding: 5px;
+       padding-left: 25%;
+       padding-right: 25%;
+   }
+   
+   .rentCat .imgbounds img {
+       background-color: #e4c720;
+       background-size: 100%;
+       width: 100%;
+       height: auto;
+       margin: 0 auto;
+       text-align: center;
+       display: block;
+       padding: 5px;
+       padding-left: 25%;
+       padding-right: 25%;
+   }
+   
+   /*  .ask4hCat .footerAds {
+     background: #ce6f17;
+   }
+   
+   .freelancerCat .footerAds {
+       background: #3a609a;
+   }
+   
+   .babyCat .footerAds {
+       background: #9a338d;
+   }*/
+   
+   
+   .box2H.babyCat {
+       background-color: #9e5395!important;
+       border-top: 5px solid #7b2370;
+       padding: 0px;
+   }
+   
+   
+   
+   
+   .box2H.freelancerCat {
+       background-color: #6490d2!important;
+       border-top: 5px solid #2a5390;
+       padding: 0px;
+   }
+   
+   .box2H.ask4hCat {
+       background-color: #deb876!important;
+       border-top: 5px solid #a07f44;
+       padding: 0px;
+   }
+   
+   .mangmentpst h1 {
+       color: #fafafa;
+       text-align: left;
+       font-size: 15px;
+       margin: 0px;
+       margin-bottom: 10px;
+       display: block;
+       text-overflow: ellipsis;
+       max-width: 100%;
+       overflow: hidden;
+       font-weight: 700;
+       /* border-bottom: 1px solid #999; */
+       padding-bottom: 7px;
+   }
+   
+   span.buildingNam {
+       font-size: 12px;
+       color: #fafafa;
+       text-align: left;
+       width: 100%;
+       display: block;
+       margin-top: 10px;
+       margin-left: 1px;
+       font-weight: 700;
+   }
+   
+   span.buildingNam::before {
+       /*content: '\f0f7';*/
+       font-size: 12px;
+       font-family: FontAwesome;
+       padding-right: 5px;
+   }
+   
+   
+   .mangmentpst h1::before {
+       content: 'Subject:';
+       /* text-decoration: underline; */
+       /* font-size: 12px; */
+       color: #fafafa;
+   }
+   
+   span.nmUser {
+       display: inline-block;
+       text-overflow: ellipsis;
+       /* background: red; */
+       /* float: left; */
+       white-space: nowrap;
+       width: 44%;
+       overflow: hidden;
+       vertical-align: middle;
+     
+       color: #333;
+   }
+   
+   
+   .mangmentpsticon {
+       /* background: url(../img/managment-post.svg) no-repeat center center; */
+       /* width: 80px; */
+       /* height: 80px; */
+       display: block;
+       clear: both;
+       background-size: 100%;
+       /* background-color: red; */
+       margin: 0 auto;
+       /* padding-top: 10px; */
+       /* background-color: rgb(176, 212, 92); */
+       /* margin-top: 10px; */
+       margin-bottom: 5px;
+       border-radius: 60px;
+       /* width: 38px; */
+       height: 13px;
+       /* padding: 10px; */
+       /* box-shadow: 1px 2px 4px rgba(0,0,0,0.5) inset; */
+       text-align: left;
+       margin: 0;
+   }
+   
+   .mangmentpst p {
+       padding-left: 0px;
+       padding-right: 0px;
+       text-align: left;
+       color: #fafafa;
+       font-size: 12px;
+       width: 100%;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       line-height: 1.2em;
+           display: inline-block;
+   
+   }
+   
+    
+   
+   
+   
+   
+   .box2H{
+     position: relative;
+     /*background-blend-mode: multiply;*/
+     /*background-image: url(../img/shapeC.png);*/
+     background-size: 140%;
+   }
+   
+   /*.box2H::after {
+       content: '';
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       z-index: 1;
+       top: 0px;
+       left: 0px;
+       background-size: 140%;
+       background-blend-mode: multiply;
+   }*/
+   
+   .descripion {
+       color: #000;
+       padding: 10px;
+       background: #fafafa;
+       position: relative;
+       height: 42.4%;
+       width: 100%;
+       font-size: 13px;
+       text-overflow: ellipsis;
+       clear: both;
+       overflow: hidden;
+   }
+   
+   .descripion p{
+     /*  white-space: pre-wrap;*/
+       /*text-overflow: ellipsis;*/
+       overflow: hidden;
+       display: -webkit-box;
+       -webkit-line-clamp: 7;
+       -webkit-box-orient: vertical;
+       margin: 0;
+   }
+   
+   .descripion p {
+       max-height: 200px;
+       overflow: hidden; 
+       display: block;
+   }
+   
+   
+   body .box2H.allCat.for_sale .descripion p  , body .box2H.allCat.for_rent .descripion p {
+       max-height: 151px;
+       /* overflow: hidden; */
+       display: block;
+   }
+   
+   
+   
+   
+   
+   span.ageX {
+       display: block;
+       font-weight: 500;
+       color: #000;
+       margin-top: 5px;
+   }
+   
+   span.drivers {
+       display: block;
+       clear: both;
+       font-weight: 500;
+       color: #000;
+       margin-top: 0px;
+       margin-bottom: 6px;
+   }
+   span.ToX, span.fromX {
+       font-weight: 500;
+   }
+   
+   .carpooling span.headcat {
+       padding-top: 3px;
+       margin-top: 0px;
+   }
+   
+   body .carpooling .imgbounds {
+       margin-bottom: 4px;
+   }
+   
+   .fromX::after {
+       content: '-';
+       padding-right: 10px;
+       padding-left: 8px;
+   }
+   
+   .box2H.rentCat .headcat , .box2H.rentCat .timeAds , .box2H.rentCat .footerAds .imgUser {
+     color: #000;
+   }
+   
+   span.price {
+       display: block;
+       position: absolute;
+       right: 0px;
+       bottom: 0px;
+       width: 50%;
+       background: rgba(0,0,0,0.6);
+       color: #fafafa;
+       text-align: center;
+       padding: 5px;
+       border-radius: 50px 0px 0px 0px;
+   }
+   
+   
+   .footerAds {
+       height: 10%;
+       background: #fafafa;
+       width: 100%;
+       /* margin-left: 15px; */
+       /* margin-right: 15px; */
+       padding: 3px 10px;
+       border-radius: 0px 0px 3px 3px;
+       color: #333;
+       border-top: 1.4px solid #e2e2e2;
+   }
+   span.imgUser {
+       width: 100%;
+       display: block;
+       color: #fafafa;
+       font-size: 11px;
+       vertical-align: middle;
+       margin-top: 5px;
+   }
+   
+   span.imgUser img {
+       width: 33px;
+       height: 33px;
+       display: inline-block;
+       border-radius: 100%;
+       margin-right: 10px;
+   }
+   
+   
+   
+   .imgbounds img {
+     /*  transform: scale(1);*/
+   }
+   
+   #video-slider video {
+       /* background: #333; */
+       border-radius: 8px;
+       width: 100%;
+       height: 100%;
+       overflow: hidden;
+   }
+   
+   
+   .headcat i {
+       width: 28px;
+       height: 28px;
+       display: block;
+       background-size: 100%;
+       float: left;
+       /* position: absolute; */
+       /* left: 7px; */
+       margin-top: -1px;
+       margin-right: 5px;
+       background-repeat: no-repeat;
+   }
+   
+   
+   
+   
+   div[style$="#6fa8b5"]  .imgbounds {
+       margin-top: 7px;
+       margin-bottom: 0px;
+       clear: both;
+       position: relative;
+       max-height: 35%;
+       overflow: hidden;
+   }
+   
+   
+   
+   
+   div[style$="#6fa8b5"] .imgbounds img {
+       max-width: 100%;
+   }
+   
+   
+   
+   
+   /*------RESPONSIVE--------*/
+   
+   
+   .box2H.allCat.carpooling {
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#53a973+1,ffd53f+34 */
+     background: #53a973; /* Old browsers */
+     background: -moz-linear-gradient(top, #53a973 1%, #ffd53f 34%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(top, #53a973 1%,#ffd53f 34%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom, #53a973 1%,#ffd53f 34%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53a973', endColorstr='#ffd53f',GradientType=0 ); /* IE6-9 */
+   }
+   
+   
+   .box2H.allCat.babysitter{
+   
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cc576d+0,edb493+36 */
+     background: #cc576d; /* Old browsers */
+     background: -moz-linear-gradient(top, #cc576d 0%, #edb493 36%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(top, #cc576d 0%,#edb493 36%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom, #cc576d 0%,#edb493 36%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc576d', endColorstr='#edb493',GradientType=0 ); /* IE6-9 */
+   }
+   
+   
+   
+   
+   
+   
+   .box2H.allCat.pet_care {
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#925cdf+0,46dbdb+42 */
+     background: #925cdf; /* Old browsers */
+     background: -moz-linear-gradient(top, #925cdf 0%, #46dbdb 42%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(top, #925cdf 0%,#46dbdb 42%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom, #925cdf 0%,#46dbdb 42%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#925cdf', endColorstr='#46dbdb',GradientType=0 ); /* IE6-9 */
+   }
+   
+   
+   .box2H.allCat.for_sale {
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b83c6+0,5ec8ec+30,5ec8ec+100 */
+     background: #2b83c6; /* Old browsers */
+     background: -moz-linear-gradient(top, #2b83c6 0%, #5ec8ec 30%, #5ec8ec 100%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(top, #2b83c6 0%,#5ec8ec 30%,#5ec8ec 100%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom, #2b83c6 0%,#5ec8ec 30%,#5ec8ec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b83c6', endColorstr='#5ec8ec',GradientType=0 ); /* IE6-9 */
+   }
+   
+   .box2H.allCat.sport_partner{
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f77c67+0,ec8d61+32,c54b57+72 */
+     background: #f77c67; /* Old browsers */
+     background: -moz-linear-gradient(top, #f77c67 0%, #ec8d61 32%, #c54b57 72%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(top, #f77c67 0%,#ec8d61 32%,#c54b57 72%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom, #f77c67 0%,#ec8d61 32%,#c54b57 72%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f77c67', endColorstr='#c54b57',GradientType=0 ); /* IE6-9 */
+   }
+   
+   .box2H.allCat.looking_for{
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eb7713+1,fee94d+40 */
+   background: #eb7713; /* Old browsers */
+   background: -moz-linear-gradient(top, #eb7713 1%, #fee94d 40%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, #eb7713 1%,#fee94d 40%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, #eb7713 1%,#fee94d 40%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb7713', endColorstr='#fee94d',GradientType=0 ); /* IE6-9 */
+   }
+   .box2H.allCat.volunteers_needed {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#037a85+1,efffa4+35 */
+   background: #037a85; /* Old browsers */
+   background: -moz-linear-gradient(top, #037a85 1%, #efffa4 35%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, #037a85 1%,#efffa4 35%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, #037a85 1%,#efffa4 35%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#037a85', endColorstr='#efffa4',GradientType=0 ); /* IE6-9 */
+   }
+   
+   .box2H.allCat.part_time_work {
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1c8ac8+1,98d9df+35 */
+     background: #1c8ac8; /* Old browsers */
+     background: -moz-linear-gradient(top, #1c8ac8 1%, #98d9df 35%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(top, #1c8ac8 1%,#98d9df 35%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom, #1c8ac8 1%,#98d9df 35%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c8ac8', endColorstr='#98d9df',GradientType=0 ); /* IE6-9 */
+   }
+   
+   .box2H.allCat.for_rent{
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#32ad8c+1,9fc6e9+34 */
+   background: #32ad8c; /* Old browsers */
+   background: -moz-linear-gradient(top, #32ad8c 1%, #9fc6e9 34%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, #32ad8c 1%,#9fc6e9 34%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, #32ad8c 1%,#9fc6e9 34%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32ad8c', endColorstr='#9fc6e9',GradientType=0 ); /* IE6-9 */
+   }
+   
+   
+   .owl-carousel .owl-item img {
+       display: block;
+       width: auto;
+       height: auto;
+       vertical-align: middle;
+       overflow: hidden;
+       max-height: 167px!important;
+   }
+   
+   .owl-carousel .owl-item {
+   margin-right: 14px;
+   margin-left: 3px;
+   
+   }
+   
+   span.qrcods {
+       margin-left: 9px;
+   }
+   /*--------time------*/
+   
+   .time {
+       position: absolute;
+       top: -24px;
+       right: 57px;
+       z-index: 9999;
+   }
+   
+   @media screen and (min-width: 1900px) {
+     span.headcat {
+         font-size: 18px;
+     }
+   }
+   
+   
+   
+   @media screen and (max-width: 650px) {
+   
+     .resizeBrowser {
+        background: #eeeeee url(../img/resize.svg) no-repeat scroll center center / 70% auto;
+        cursor: nesw-resize;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999999999;
+    }
+   
+   
+   }
+   
+   #overlay {
+       position: fixed; /* Sit on top of the page content */
+       display: none; /* Hidden by default */
+       width: 100%; /* Full width (cover the whole page) */
+       height: 100%; /* Full height (cover the whole page) */
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+       z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+       cursor: pointer; /* Add a pointer on hover */
+   }
+   
+   div#Sleep {
+       background: rgba(0, 0, 0 ,1);
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       width: 100%;
+       height: 100%;
+       z-index: 1000;
+     /*  display: none!important;*/
+   
+   }
+   
+   div#Sleep .appslogo {
+       height: 60px;
+   }
+   
+   .sleepCont {
+       width: 25%;
+       margin: 0 auto;
+       margin-top: 18%;
+   }
+   
+   .logoSleep {
+       background: url(../img/zzz.svg) no-repeat center center;
+       background-size: 100%;
+       height: 240px;
+       width: 290px;
+       margin: 0 auto;
+       margin-bottom: 30px;
+   }
+   
+   span.smallAgo {
+       font-size: 11px;
+       float: left;
+       color: #fafafa;
+       margin-bottom: 10px;
+       width: 100%;
+       text-align: left;
+       border-bottom: 1px solid rgba(255,255,255,0.3);
+       margin-top: -15px;
+       padding-bottom: 2px;
+   }
+   
+   
+   span.latest-post {
+       /* background: #ff6f00; */
+       position: absolute;
+       right: 0px;
+       top: 10px;
+       width: 45px;
+       background: url(../img/new.svg) no-repeat center center;
+       background-size: 100%;
+       display: block;
+       /* font-size: 0px; */
+       color: rgba(0,0,0,0);
+   }
+   
+   video#bgV {
+       width: 100%;
+       height: auto;
+       z-index: -1;
+       position: absolute;
+   }
+   .vidoesX::before {
+       content: '';
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       left: 0px;
+       top: 0px;
+       background: rgba(0, 0, 0,0.7);
+       z-index: 0;
+   }
+   
+   span.imgS {
+       width: 100%;
+       height: auto;
+   }
+   
+   
+   
+   span.imgS img {
+   
+       margin-bottom: 8px;
+       display: block;
+       border-radius: 7px;
+       /* box-shadow: 11px 2px 14px rgba(0,0,0,0.2) inset; */
+       width: 100%;
+       margin: 0 auto;
+   }
+   
+   
+   
+   span.buildingNam::after {
+       content: 'Management';
+   }
+   
+   
+   .allCat{
+       background-color: transparent!important;
+   }
+   
+   
+   body .imgbounds img {
+       width: 100%!important;
+       height: auto!important;
+       object-fit: cover;
+       padding: 0px;
+       margin: 0px!important;
+       position: absolute;
+       left: 0px;
+       min-height: 100%;
+       overflow: hidden!important;
+       object-position: center;
+     }
+   
+     body span.imgcrvs {
+       width: 27px!important;
+       height: 27px!important;
+       overflow: hidden;
+       display: inline-block;
+       border-radius: 100%;
+       padding: 0px;
+       margin: 0px;
+       vertical-align: middle;
+       margin-right: 2px;
+       /* border: 1px solid #ccc; */
+     }
+     
+     
+     
+   
+    
+   
+   body .owl-carousel .owl-item span.imgUser img {
+       width: 100%;
+       height: auto;
+       display: inline-block;
+       background: url(../img/usersd.svg) no-repeat center center;
+       margin-top: -5px;
+       background-size: contain;
+   }
+
+    /******Flyers Ad Section******/
+
+    .flyerAdSec {
+        /* height: 49%; */
+        height: 46%;
+        padding:1% 0px;
+        margin-top: 0;
+        width: calc(50% - 15px);
+        margin: 0px 10px 0px 5px;
+        float: right;
+        border: 8px solid #353535;
+        border-radius: 13px;
+    }
+ 
+    .flyerAdSec .flyers > div {
+       /*  width: 205px;
+        height: 265px; */
+        float: left;
+        margin: auto 2.5%;
+       /*  background-color: red; */
+        width: 30%;
+        padding-top: 38.8235%; /*for Ratio*/
+        position: relative; 
+        border-radius: 5px;
+        /* overflow: hidden; */
+
+        margin-top: 3%;
+    }
+ 
+    .flyerAdSec .flyers .flyer-2 {
+        margin: auto 0px;
+
+        margin-top: 3%;
+    }
+ 
+/*     .flyerAdSec .flyers > div img {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+    }
+     */
+
+     .flyerAdSec .flyers > div .flyerCon {
+        position: absolute;
+        left: 0px;
+        top: -27px;
+        right: 0px;
+        bottom: 0px;
+        width: 250%;
+        transform: scale(0.4);
+        margin: -75%;
+     }

@@ -1,0 +1,26 @@
+
+
+@font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 400;
+ src: url(montserrat400.eot);
+ src: url(montserrat400.eot?#iefix) format('embedded-opentype'),
+      url(montserrat400.woff2) format('woff2'),
+      url(montserrat400.woff) format('woff'),
+      url(montserrat400.ttf) format('truetype'),
+      url(montserrat400.svg) format('svg');
+}
+
+
+@font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 700;
+ src: url(montserrat700.eot);
+ src: url(montserrat70.eot?#iefix) format('embedded-opentype'),
+      url(montserrat700.woff2) format('woff2'),
+      url(montserrat700.woff) format('woff'),
+      url(montserrat700.ttf) format('truetype'),
+      url(montserrat700.svg) format('svg');
+}
